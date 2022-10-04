@@ -6,10 +6,12 @@ class DogHousesController < ApplicationController
     render json: dog_house
   end
 
+ 
   private
 
   def render_not_found_response
     render json: { error: "Dog house not found" }, status: :not_found
   end
+
 
 end
